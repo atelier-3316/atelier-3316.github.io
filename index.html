@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3316 Atelier | Galeria personal</title>
+    <meta
+      name="description"
+      content="Galeria personal de obra original. Dibujo, archivo y consultas de adquisicion atendidas de forma directa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="3316 Atelier inicio">
+        <span class="brand-mark">3316</span>
+        <span class="brand-name">Atelier</span>
+      </a>
+      <nav class="nav">
+        <a href="#obra">Obra</a>
+        <a href="#archivo">Archivo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img
+          class="hero-image"
+          src="assets/images/obra-3316-03.jpeg"
+          alt="Dibujo abstracto de lineas y tramas de la serie 3316"
+        />
+        <div class="hero-copy">
+          <p class="kicker">Galeria personal</p>
+          <h1>3316 Atelier</h1>
+          <p>
+            Dibujo original, obra unica y archivo visual reunidos en una
+            galeria intima. Las consultas de adquisicion se atienden de forma
+            directa y privada.
+          </p>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="button primary" href="#obra">Ver obra disponible</a>
+            <a class="button ghost" href="#contacto">Consultar adquisicion</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-band" aria-labelledby="intro-title">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="kicker">Linea, trama, gesto</p>
+            <h2 id="intro-title">Una galeria sin escaparate</h2>
+          </div>
+          <p>
+            Este espacio presenta piezas disponibles, obras recientes y archivo
+            de series anteriores. Cada consulta se conversa personalmente para
+            cuidar el contexto de la obra, su documentacion, entrega y forma de
+            pago.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-inner works-section" id="obra" aria-labelledby="obra-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Obra disponible</p>
+            <h2 id="obra-title">Piezas en consulta</h2>
+          </div>
+          <p>
+            Cada pieza se muestra como obra, no como producto. No hay precios
+            publicos; cada obra abre una conversacion privada.
+          </p>
+        </div>
+        <div class="works-grid" id="availableWorks"></div>
+      </section>
+
+      <section class="section-band archive-section" id="archivo" aria-labelledby="archivo-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="kicker">Archivo</p>
+              <h2 id="archivo-title">Obra no disponible</h2>
+            </div>
+            <p>
+              El archivo da profundidad a la galeria: muestra evolucion,
+              series, piezas vendidas y obras en coleccion privada.
+            </p>
+          </div>
+          <div class="archive-list" id="archiveWorks"></div>
+        </div>
+      </section>
+
+      <section class="section-inner about-section" id="sobre" aria-labelledby="sobre-title">
+        <div class="about-copy">
+          <p class="kicker">Sobre la artista</p>
+          <h2 id="sobre-title">Una practica construida en linea</h2>
+          <p>
+            Soy una artista visual que trabaja desde el dibujo, la repeticion
+            y la construccion de tramas. Mi obra explora sistemas imaginarios,
+            mapas interiores y estructuras que aparecen entre lo organico y lo
+            arquitectonico.
+          </p>
+          <p>
+            Este texto es provisional: lo ajustaremos con tu historia real,
+            formacion, exposiciones, procesos y tono personal.
+          </p>
+        </div>
+        <aside class="statement-panel" aria-label="Statement breve">
+          <p>
+            "Cada pieza busca sostener una pausa: una imagen que no exige ser
+            explicada de inmediato, sino habitada con calma."
+          </p>
+        </aside>
+      </section>
+
+      <section class="contact-section" id="contacto" aria-labelledby="contacto-title">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="kicker">Contacto privado</p>
+            <h2 id="contacto-title">Consultar una obra</h2>
+            <p>
+              Para disponibilidad, adquisicion, envio, visitas al estudio o
+              encargos especiales, escribe directamente. Responderé cada
+              solicitud de forma personal.
+            </p>
+            <div class="contact-methods">
+              <a href="mailto:hola@3316atelier.com?subject=Consulta%20de%20obra%20-%203316%20Atelier">
+                hola@3316atelier.com
+              </a>
+              <span>Ciudad de Mexico · envios bajo consulta</span>
+            </div>
+          </div>
+          <form
+            class="contact-form"
+            action="mailto:hola@3316atelier.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label>
+              Nombre
+              <input name="nombre" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Obra de interes
+              <input name="obra" placeholder="Titulo de la obra" />
+            </label>
+            <label>
+              Mensaje
+              <textarea name="mensaje" rows="5" placeholder="Cuentame que obra te interesa o que informacion necesitas."></textarea>
+            </label>
+            <button class="button primary" type="submit">Enviar consulta</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>3316 Atelier</span>
+      <span>Obra original · consultas privadas · pagos por enlace directo</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
