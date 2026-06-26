@@ -6,7 +6,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Composicion de lineas, tramas y estructuras organicas en tension.",
-    image: "assets/images/watermarked/obra-3316-wm-01.jpg"
+    image: "assets/images/watermarked/1.jpg"
   },
   {
     title: "Plano fragmentado",
@@ -15,7 +15,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Arquitectura imaginaria construida desde cruces, sombras y ritmo.",
-    image: "assets/images/watermarked/obra-3316-wm-02.jpg"
+    image: "assets/images/watermarked/2.jpg"
   },
   {
     title: "Campo de lineas",
@@ -24,7 +24,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Una pieza expansiva donde la trama se vuelve paisaje interior.",
-    image: "assets/images/watermarked/obra-3316-wm-03.jpg"
+    image: "assets/images/watermarked/3.jpg"
   },
   {
     title: "Estructura contenida",
@@ -33,7 +33,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Formas curvas y geometricas conviven en una superficie compacta.",
-    image: "assets/images/watermarked/obra-3316-wm-04.jpg"
+    image: "assets/images/watermarked/4.jpg"
   },
   {
     title: "Mapa suspendido",
@@ -42,7 +42,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Una forma central parece flotar entre borde, red y gesto.",
-    image: "assets/images/watermarked/obra-3316-wm-06.jpg"
+    image: "assets/images/watermarked/6.jpg"
   }
 ];
 
@@ -54,7 +54,7 @@ const archiveWorks = [
     year: "Ano por confirmar",
     status: "No disponible",
     note: "Dos campos graficos dialogan como variaciones de un mismo sistema.",
-    image: "assets/images/watermarked/obra-3316-wm-05.jpg"
+    image: "assets/images/watermarked/5.jpg"
   },
   {
     title: "Estudios de trama",
