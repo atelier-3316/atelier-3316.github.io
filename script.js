@@ -6,7 +6,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Composicion de lineas, tramas y estructuras organicas en tension.",
-    image: "assets/images/obra-3316-01.jpeg"
+    image: "assets/images/watermarked/obra-3316-wm-01.jpg"
   },
   {
     title: "Plano fragmentado",
@@ -15,7 +15,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Arquitectura imaginaria construida desde cruces, sombras y ritmo.",
-    image: "assets/images/obra-3316-02.jpg"
+    image: "assets/images/watermarked/obra-3316-wm-02.jpg"
   },
   {
     title: "Campo de lineas",
@@ -24,7 +24,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Una pieza expansiva donde la trama se vuelve paisaje interior.",
-    image: "assets/images/obra-3316-03.jpeg"
+    image: "assets/images/watermarked/obra-3316-wm-03.jpg"
   },
   {
     title: "Estructura contenida",
@@ -33,16 +33,7 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Formas curvas y geometricas conviven en una superficie compacta.",
-    image: "assets/images/obra-3316-04.jpeg"
-  },
-  {
-    title: "Diptico de tramas",
-    technique: "Tinta sobre papel",
-    size: "Medidas por confirmar",
-    year: "Ano por confirmar",
-    status: "Disponible",
-    note: "Dos campos graficos dialogan como variaciones de un mismo sistema.",
-    image: "assets/images/obra-3316-05.jpg"
+    image: "assets/images/watermarked/obra-3316-wm-04.jpg"
   },
   {
     title: "Mapa suspendido",
@@ -51,17 +42,19 @@ const availableWorks = [
     year: "Ano por confirmar",
     status: "Disponible",
     note: "Una forma central parece flotar entre borde, red y gesto.",
-    image: "assets/images/obra-3316-06.jpg"
+    image: "assets/images/watermarked/obra-3316-wm-06.jpg"
   }
 ];
 
 const archiveWorks = [
   {
-    title: "Serie 3316",
-    technique: "Tinta y dibujo lineal",
-    size: "Archivo en construccion",
-    year: "2024-2026",
-    status: "En revision"
+    title: "Orden y caos",
+    technique: "Tinta sobre papel",
+    size: "Medidas por confirmar",
+    year: "Ano por confirmar",
+    status: "No disponible",
+    note: "Dos campos graficos dialogan como variaciones de un mismo sistema.",
+    image: "assets/images/watermarked/obra-3316-wm-05.jpg"
   },
   {
     title: "Estudios de trama",
@@ -114,10 +107,20 @@ function renderArchiveWorks() {
   container.innerHTML = archiveWorks
     .map(
       (work) => `
-        <article class="archive-item">
-          <strong>${work.title}</strong>
-          <span>${work.technique}</span>
-          <span>${work.size} · ${work.year}</span>
+        <article class="archive-item ${work.image ? "archive-featured" : ""}">
+          ${
+            work.image
+              ? `<a class="archive-image" href="${work.image}" target="_blank" rel="noreferrer" aria-label="Ver ${work.title} en grande">
+                  <img src="${work.image}" alt="${work.title}" loading="lazy" />
+                </a>`
+              : ""
+          }
+          <div class="archive-copy">
+            <strong>${work.title}</strong>
+            <span>${work.technique}</span>
+            <span>${work.size} · ${work.year}</span>
+            ${work.note ? `<span>${work.note}</span>` : ""}
+          </div>
           <span class="status">${work.status}</span>
         </article>
       `
