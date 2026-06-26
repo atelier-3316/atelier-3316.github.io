@@ -1,22 +1,24 @@
 # 3316 Atelier
 
-Sitio estático para GitHub Pages.
+Sitio web estatico para GitHub Pages.
 
-## Cómo actualizar obras
+Galeria personal de obra grafica y dibujo, con consulta directa para adquisicion. La pagina no muestra precios publicos ni funciona como tienda.
 
-1. Abre `script.js`.
-2. Edita la lista `availableWorks` para obra disponible.
-3. Edita la lista `archiveWorks` para obra vendida, reservada o no disponible.
-4. Cuando tengas fotografías reales, coloca los archivos en `assets/images/` y cambiamos cada ficha para usar la imagen correspondiente.
+## Como actualizar obras
 
-## Publicación en GitHub Pages
+1. Editar `script.js`.
+2. Cambiar la informacion de cada obra: titulo, tecnica, medidas, anio y disponibilidad.
+3. Subir las imagenes nuevas a `assets/images/watermarked/`.
+4. Actualizar el nombre del archivo de imagen en cada ficha.
 
-Sube estos archivos al repositorio y activa GitHub Pages desde la rama principal. El archivo de entrada es `index.html`.
+## Publicacion
+
+El sitio se publica con GitHub Pages desde el archivo `index.html`.
 
 ## Contacto y pagos
 
-La página no muestra precios ni carrito. El flujo recomendado es:
+El flujo recomendado es:
 
-obra -> consultar adquisición -> conversación privada -> link de pago externo.
+obra -> consultar adquisicion -> conversacion privada -> link de pago externo.
 
-Puedes usar Stripe Payment Links, PayPal, Mercado Pago o transferencia bancaria según el comprador.
+Se pueden usar links externos de Stripe, PayPal, Mercado Pago, Shopify Buy Button o transferencia bancaria, manteniendo la experiencia visual como galeria y no como tienda.
