@@ -9,7 +9,7 @@ const availableWorks = [
     image: "assets/images/watermarked/1.jpg"
   },
   {
-    title: "Reflectivo.",
+    title: "reflectivo",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -27,7 +27,7 @@ const availableWorks = [
     image: "assets/images/watermarked/3.jpg"
   },
   {
-    title: "Estructura de pensamientos.",
+    title: "estructura de pensamiento",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -36,7 +36,7 @@ const availableWorks = [
     image: "assets/images/watermarked/4.jpg"
   },
   {
-    title: "Geometría abstracta 1.",
+    title: "geometría abstracta 1",
     technique: "Tinta sobre soporte textil o papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -48,7 +48,7 @@ const availableWorks = [
 
 const archiveWorks = [
   {
-    title: "Orden y caos.",
+    title: "Orden y caos",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -65,7 +65,7 @@ const archiveWorks = [
   }
 ];
 
-const contactEmail = "hola@3316atelier.com";
+const contactEmail = "artisticmione@gmail.com";
 
 function inquiryHref(workTitle) {
   const subject = encodeURIComponent(`Consulta de obra - ${workTitle}`);
