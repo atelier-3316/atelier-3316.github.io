@@ -3,7 +3,7 @@ const availableWorks = [
     title: "Topografia 3316 I",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
-    year: "Ano por confirmar",
+    year: "Año por confirmar",
     status: "Disponible",
     note: "Composicion de lineas, tramas y estructuras organicas en tension.",
     image: "assets/images/watermarked/1.jpg"
@@ -12,7 +12,7 @@ const availableWorks = [
     title: "Reflectivo.",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
-    year: "Ano por confirmar",
+    year: "Año por confirmar",
     status: "Disponible",
     note: "Arquitectura imaginaria construida desde cruces, sombras y ritmo.",
     image: "assets/images/watermarked/2.jpg"
@@ -21,7 +21,7 @@ const availableWorks = [
     title: "Abrupto.",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
-    year: "Ano por confirmar",
+    year: "Año por confirmar",
     status: "Disponible",
     note: "Una pieza expansiva donde la trama se vuelve paisaje interior.",
     image: "assets/images/watermarked/3.jpg"
@@ -30,7 +30,7 @@ const availableWorks = [
     title: "Estructura de pensamientos.",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
-    year: "Ano por confirmar",
+    year: "Año por confirmar",
     status: "Disponible",
     note: "Formas curvas y geometricas conviven en una superficie compacta.",
     image: "assets/images/watermarked/4.jpg"
@@ -39,7 +39,7 @@ const availableWorks = [
     title: "Geometría abstracta 1.",
     technique: "Tinta sobre soporte textil o papel",
     size: "Medidas por confirmar",
-    year: "Ano por confirmar",
+    year: "Año por confirmar",
     status: "Disponible",
     note: "Una forma central parece flotar entre borde, red y gesto.",
     image: "assets/images/watermarked/6.jpg"
@@ -51,7 +51,7 @@ const archiveWorks = [
     title: "Orden y caos",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
-    year: "Ano por confirmar",
+    year: "Año por confirmar",
     status: "No disponible",
     note: "Dos campos graficos dialogan como variaciones de un mismo sistema.",
     image: "assets/images/watermarked/5.jpg"
