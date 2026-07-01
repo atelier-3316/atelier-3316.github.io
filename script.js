@@ -9,7 +9,7 @@ const availableWorks = [
     image: "assets/images/watermarked/1.jpg"
   },
   {
-    title: "reflectivo",
+    title: "Reflectivo.",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -27,7 +27,7 @@ const availableWorks = [
     image: "assets/images/watermarked/3.jpg"
   },
   {
-    title: "estructura de pensamiento",
+    title: "Estructura de pensamientos.",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -36,7 +36,7 @@ const availableWorks = [
     image: "assets/images/watermarked/4.jpg"
   },
   {
-    title: "geometría abstracta 1",
+    title: "Geometría abstracta 1.",
     technique: "Tinta sobre soporte textil o papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
