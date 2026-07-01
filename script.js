@@ -9,7 +9,7 @@ const availableWorks = [
     image: "assets/images/watermarked/1.jpg"
   },
   {
-    title: "Plano fragmentado",
+    title: "reflectivo",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -18,7 +18,7 @@ const availableWorks = [
     image: "assets/images/watermarked/2.jpg"
   },
   {
-    title: "Campo de lineas",
+    title: "Abrupto.",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -27,7 +27,7 @@ const availableWorks = [
     image: "assets/images/watermarked/3.jpg"
   },
   {
-    title: "Estructura contenida",
+    title: "estructura de pensamiento",
     technique: "Tinta sobre papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
@@ -36,7 +36,7 @@ const availableWorks = [
     image: "assets/images/watermarked/4.jpg"
   },
   {
-    title: "Mapa suspendido",
+    title: "geometría abstracta 1",
     technique: "Tinta sobre soporte textil o papel",
     size: "Medidas por confirmar",
     year: "Ano por confirmar",
