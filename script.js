@@ -130,3 +130,47 @@ function renderArchiveWorks() {
 
 renderAvailableWorks();
 renderArchiveWorks();
+
+const contactForm = document.querySelector("#contactForm");
+const formStatus = document.querySelector("#formStatus");
+
+if (contactForm && formStatus) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const endpoint = contactForm.getAttribute("action");
+    const submitButton = contactForm.querySelector("button[type='submit']");
+
+    if (!endpoint || endpoint.includes("TU_CODIGO_FORMSPREE")) {
+      formStatus.textContent =
+        "Falta conectar Formspree. Mientras tanto, puedes escribir directo al correo.";
+      return;
+    }
+
+    submitButton.disabled = true;
+    formStatus.textContent = "Enviando consulta...";
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error("No se pudo enviar el formulario.");
+      }
+
+      contactForm.reset();
+      formStatus.textContent =
+        "Gracias. Tu consulta fue enviada y responderemos de forma personal.";
+    } catch (error) {
+      formStatus.textContent =
+        "No se pudo enviar desde el formulario. Puedes escribir directo al correo.";
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+}

@@ -467,6 +467,19 @@ textarea:focus {
   color: var(--ink);
 }
 
+.contact-form .button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.form-status {
+  min-height: 22px;
+  margin: 0;
+  color: rgba(255, 250, 243, 0.74);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
