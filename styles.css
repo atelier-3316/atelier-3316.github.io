@@ -507,6 +507,11 @@ select {
   appearance: none;
 }
 
+select option {
+  background: var(--white);
+  color: var(--ink);
+}
+
 textarea {
   resize: vertical;
 }
