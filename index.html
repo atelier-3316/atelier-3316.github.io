@@ -24,7 +24,9 @@
       </a>
       <nav class="nav">
         <a href="#obra">Obra</a>
+        <a href="#ediciones">Ediciones</a>
         <a href="#archivo">Archivo</a>
+        <a href="#red">Red 3316</a>
         <a href="#sobre">Sobre</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -81,6 +83,27 @@
         <div class="works-grid" id="availableWorks"></div>
       </section>
 
+      <section class="section-band editions-section" id="ediciones" aria-labelledby="ediciones-title">
+        <div class="section-inner editions-grid">
+          <div>
+            <p class="kicker">Ediciones digitales</p>
+            <h2 id="ediciones-title">Archivos bajo consulta privada</h2>
+          </div>
+          <div class="editions-copy">
+            <p>
+              Algunas obras pueden solicitarse como archivo digital sin marca de
+              agua. La entrega se realiza de forma privada despues de confirmar
+              disponibilidad, condiciones de uso y pago por enlace directo.
+            </p>
+            <p>
+              Las imagenes publicas permanecen protegidas con marca de agua; los
+              archivos limpios no se publican en este sitio ni en el repositorio.
+            </p>
+            <a class="text-link" href="#contacto">Solicitar archivo digital</a>
+          </div>
+        </div>
+      </section>
+
       <section class="section-band archive-section" id="archivo" aria-labelledby="archivo-title">
         <div class="section-inner">
           <div class="section-heading">
@@ -96,6 +119,27 @@
             </p>
           </div>
           <div class="archive-list" id="archiveWorks"></div>
+        </div>
+      </section>
+
+      <section class="section-inner network-section" id="red" aria-labelledby="red-title">
+        <div class="network-copy">
+          <p class="kicker">Red 3316</p>
+          <h2 id="red-title">Una obra tambien vive despues de salir</h2>
+          <p>
+            Quienes adquieren una obra pueden compartir una fotografia de como
+            convive en su espacio. Por ahora estas imagenes se reciben como
+            archivo privado; si mas adelante alguna se publica, se pedira una
+            autorizacion clara y especifica.
+          </p>
+        </div>
+        <div class="network-panel">
+          <strong>Gracias por formar parte del archivo vivo de 3316.</strong>
+          <p>
+            Las fotografias compartidas pueden abrir descuentos personales,
+            promociones futuras o invitaciones especiales para nuevos lanzamientos.
+          </p>
+          <a class="text-link" href="#contacto">Compartir una fotografia</a>
         </div>
       </section>
 
@@ -147,6 +191,15 @@
           >
             <input type="hidden" name="_subject" value="Nueva consulta desde 3316 Atelier" />
             <label>
+              Tipo de consulta
+              <select name="tipo_de_consulta" required>
+                <option value="">Selecciona una opcion</option>
+                <option value="Obra original">Obra original</option>
+                <option value="Archivo digital">Archivo digital</option>
+                <option value="Compartir foto de obra colocada">Compartir foto de obra colocada</option>
+              </select>
+            </label>
+            <label>
               Nombre
               <input name="nombre" autocomplete="name" required />
             </label>
@@ -160,7 +213,11 @@
             </label>
             <label>
               Mensaje
-              <textarea name="mensaje" rows="5" placeholder="Cuentame que obra te interesa o que informacion necesitas."></textarea>
+              <textarea name="mensaje" rows="5" placeholder="Cuentame que obra te interesa, si buscas un archivo digital o si quieres compartir una fotografia."></textarea>
+            </label>
+            <label class="consent-field">
+              <input name="permiso_contacto" type="checkbox" value="Acepto que 3316 me contacte sobre esta consulta" required />
+              <span>Acepto que 3316 me contacte sobre esta consulta.</span>
             </label>
             <button class="button primary" type="submit">Enviar consulta</button>
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>

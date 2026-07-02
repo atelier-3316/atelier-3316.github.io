@@ -94,7 +94,10 @@ function renderAvailableWorks() {
               <span>${work.size} · ${work.year}</span>
               <span>${work.note}</span>
             </div>
-            <a class="inquiry-link" href="${inquiryHref(work.title)}">Consultar adquisicion</a>
+            <div class="work-actions">
+              <a class="inquiry-link" href="${inquiryHref(work.title)}">Consultar adquisicion</a>
+              <a class="inquiry-link" href="#contacto">Solicitar archivo digital</a>
+            </div>
           </div>
         </article>
       `
